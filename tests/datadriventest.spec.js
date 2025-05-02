@@ -25,7 +25,7 @@ for (let worker in addworker){
     
         await page.locator("//a[normalize-space(text())='Add Employee']").click()
     
-        await page.locator("input[name='firstName']").fill("addworker[worker]")
+        await page.locator("input[name='firstName']").fill(addworker[worker])
     
         await page.locator("input[name='middleName']").fill("kumar")
     

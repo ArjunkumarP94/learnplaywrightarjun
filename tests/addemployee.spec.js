@@ -24,6 +24,7 @@ test ("add employee" , async ({page})=>{
 
     await page.locator("//button[contains(.,'Save')]").click()
 
-    await expect(page).getByRole("//h6[text()='Personal Details']").toBeVisible();
+    await expect(page.locator("//h6[text()='Personal Details']")).toBeVisible();
+    //await expect(page).toHaveURL(/web\/index\.php\/pim\/viewPersonalDetails\//)
 
 })

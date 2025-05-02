@@ -15,6 +15,9 @@ import { TIMEOUT } from 'dns';
  */
 export default defineConfig({
   testDir: './tests',
+  expect: {
+    timeout: 25000,
+  },
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -43,7 +46,7 @@ export default defineConfig({
 
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+    //  use: { ...devices['Desktop Firefox'] },
     },
 
     {

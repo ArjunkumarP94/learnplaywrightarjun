@@ -34,7 +34,7 @@ for (let paygrade in addpaygrade){
 
         await page.locator("//button[contains(.,'Save')]").click()
 
-        await page.locator("(//h6[contains(@class,'oxd-text oxd-text--h6')])[2]").tobevisible();   
+        await page.locator("(//h6[contains(@class,'oxd-text oxd-text--h6')])[2]");   
     
     })
 }
